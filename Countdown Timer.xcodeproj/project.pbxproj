@@ -13,6 +13,7 @@
 		FAF5B1EC2691B17900FDF9DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF5B1EA2691B17900FDF9DA /* Main.storyboard */; };
 		FAF5B1EE2691B17B00FDF9DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAF5B1ED2691B17B00FDF9DA /* Assets.xcassets */; };
 		FAF5B1F12691B17B00FDF9DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF5B1EF2691B17B00FDF9DA /* LaunchScreen.storyboard */; };
+		FAF5B2062691E7AF00FDF9DA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FAF5B2052691E7AF00FDF9DA /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FAF5B1ED2691B17B00FDF9DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAF5B1F02691B17B00FDF9DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAF5B1F22691B17B00FDF9DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAF5B2052691E7AF00FDF9DA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		FAF5B1D82691B17800FDF9DA = {
 			isa = PBXGroup;
 			children = (
+				FAF5B2052691E7AF00FDF9DA /* README.md */,
 				FAF5B1E32691B17900FDF9DA /* Countdown Timer */,
 				FAF5B1E22691B17900FDF9DA /* Products */,
 			);
@@ -126,6 +129,7 @@
 			files = (
 				FAF5B1F12691B17B00FDF9DA /* LaunchScreen.storyboard in Resources */,
 				FAF5B1EE2691B17B00FDF9DA /* Assets.xcassets in Resources */,
+				FAF5B2062691E7AF00FDF9DA /* README.md in Resources */,
 				FAF5B1EC2691B17900FDF9DA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K33FXWL25N;
 				INFOPLIST_FILE = "Countdown Timer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K33FXWL25N;
 				INFOPLIST_FILE = "Countdown Timer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
