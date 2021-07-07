@@ -24,7 +24,20 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PCx-hG-DEN" userLabel="Top View">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="271.5"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to boil eggs?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Foo-Ea-rDK" userLabel="Top Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="271.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Foo-Ea-rDK" firstAttribute="leading" secondItem="PCx-hG-DEN" secondAttribute="leading" id="LZr-Ry-TDk"/>
+                                            <constraint firstItem="Foo-Ea-rDK" firstAttribute="top" secondItem="PCx-hG-DEN" secondAttribute="top" id="QJ1-bm-z5E"/>
+                                            <constraint firstAttribute="trailing" secondItem="Foo-Ea-rDK" secondAttribute="trailing" id="bpU-fB-j3S"/>
+                                            <constraint firstAttribute="bottom" secondItem="Foo-Ea-rDK" secondAttribute="bottom" id="h72-Wv-XsS"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ght-Mh-CR0" userLabel="Medium View">
                                         <rect key="frame" x="0.0" y="273.5" width="374" height="271"/>
@@ -32,7 +45,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Hnp-s5-m3s">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="271"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MFg-Bb-wUm">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MFg-Bb-wUm" userLabel="Soft View">
                                                         <rect key="frame" x="0.0" y="0.0" width="114.5" height="271"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="soft_egg" translatesAutoresizingMaskIntoConstraints="NO" id="8T5-mO-N8x">
@@ -40,10 +53,15 @@
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tca-q2-Dyr">
                                                                 <rect key="frame" x="0.0" y="0.0" width="114.5" height="271"/>
-                                                                <state key="normal" title="Soft"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                                                <state key="normal" title="Soft">
+                                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="anyButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fNU-mA-LdF"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstItem="8T5-mO-N8x" firstAttribute="top" secondItem="MFg-Bb-wUm" secondAttribute="top" id="Awy-Wu-mXO"/>
                                                             <constraint firstAttribute="trailing" secondItem="tca-q2-Dyr" secondAttribute="trailing" id="G9z-QJ-Lhk"/>
@@ -55,7 +73,7 @@
                                                             <constraint firstAttribute="trailing" secondItem="8T5-mO-N8x" secondAttribute="trailing" id="p3R-WZ-3HI"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yte-fv-jbL">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yte-fv-jbL" userLabel="Medium View">
                                                         <rect key="frame" x="129.5" y="0.0" width="115" height="271"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="medium_egg" translatesAutoresizingMaskIntoConstraints="NO" id="jrQ-Qa-Aen">
@@ -63,10 +81,15 @@
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1Z-w0-fdJ">
                                                                 <rect key="frame" x="0.0" y="0.0" width="115" height="271"/>
-                                                                <state key="normal" title="Medium"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                                                <state key="normal" title="Medium">
+                                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="anyButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lrW-jf-V6f"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="trailing" secondItem="b1Z-w0-fdJ" secondAttribute="trailing" id="5bw-gv-8Fl"/>
                                                             <constraint firstItem="b1Z-w0-fdJ" firstAttribute="top" secondItem="yte-fv-jbL" secondAttribute="top" id="8U0-zE-vb5"/>
@@ -78,7 +101,7 @@
                                                             <constraint firstAttribute="bottom" secondItem="jrQ-Qa-Aen" secondAttribute="bottom" id="ynT-uC-c1d"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VjO-cB-Wbg">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VjO-cB-Wbg" userLabel="Hard View">
                                                         <rect key="frame" x="259.5" y="0.0" width="114.5" height="271"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hard_egg" translatesAutoresizingMaskIntoConstraints="NO" id="L5p-Jz-h1H">
@@ -86,10 +109,15 @@
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3UF-eo-a1Y">
                                                                 <rect key="frame" x="0.0" y="0.0" width="114.5" height="271"/>
-                                                                <state key="normal" title="Hard"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                                                <state key="normal" title="Hard">
+                                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="anyButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lTN-IS-8UW"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstItem="3UF-eo-a1Y" firstAttribute="leading" secondItem="VjO-cB-Wbg" secondAttribute="leading" id="8IV-ej-cGn"/>
                                                             <constraint firstItem="L5p-Jz-h1H" firstAttribute="top" secondItem="VjO-cB-Wbg" secondAttribute="top" id="EYJ-eP-PM3"/>
@@ -113,7 +141,6 @@
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cs9-on-ZfB" userLabel="Bottom View">
                                         <rect key="frame" x="0.0" y="546.5" width="374" height="271.5"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -131,6 +158,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JDk-7O-86i" secondAttribute="trailing" constant="20" id="oux-g6-03i"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="topLabel" destination="Foo-Ea-rDK" id="Nng-zR-Os0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
