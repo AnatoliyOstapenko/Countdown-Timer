@@ -141,6 +141,20 @@
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cs9-on-ZfB" userLabel="Bottom View">
                                         <rect key="frame" x="0.0" y="546.5" width="374" height="271.5"/>
+                                        <subviews>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zLx-j8-hl5">
+                                                <rect key="frame" x="0.0" y="135" width="374" height="3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="2" id="NJ4-zN-pCF"/>
+                                                </constraints>
+                                                <color key="progressTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </progressView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="zLx-j8-hl5" firstAttribute="centerY" secondItem="cs9-on-ZfB" secondAttribute="centerY" id="Ecv-gu-t6V"/>
+                                            <constraint firstItem="zLx-j8-hl5" firstAttribute="leading" secondItem="cs9-on-ZfB" secondAttribute="leading" id="VW2-qO-gxC"/>
+                                            <constraint firstAttribute="trailing" secondItem="zLx-j8-hl5" secondAttribute="trailing" id="Zll-FQ-gIl"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -159,6 +173,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="progressBar" destination="zLx-j8-hl5" id="EgB-0P-VAO"/>
                         <outlet property="topLabel" destination="Foo-Ea-rDK" id="Nng-zR-Os0"/>
                     </connections>
                 </viewController>
